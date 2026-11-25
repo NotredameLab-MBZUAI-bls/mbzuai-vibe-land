@@ -3,6 +3,9 @@
 
 // Realms: one folder each, realms/<id>/realm.js
 export const realms = [
+  'egp',
+  'hpp',
+  'robotics',
 ];
 
 // Crew: one file each, crew/<id>.js
