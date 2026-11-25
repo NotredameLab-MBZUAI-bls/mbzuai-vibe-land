@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MBZUAI Vibe Land</title>
+  <meta name="description" content="The Notredame Lab at MBZUAI as a pixel-art world: one island per project, one avatar per lab member.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'><rect width='8' height='8' fill='%232a6f97'/><rect x='2' y='3' width='4' height='3' fill='%236fbf5a'/><rect x='3' y='1' width='2' height='2' fill='%23ddd6c6'/></svg>">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="screen" width="640" height="360" aria-label="World map of the lab's projects"></canvas>
+    <div id="layer"></div>
+    <div id="tip" hidden></div>
+    <div id="bubble" hidden></div>
+    <div id="card" role="dialog" aria-modal="true" hidden></div>
+    <details id="toast" hidden></details>
+  </div>
+  <noscript>Vibe Land needs JavaScript.</noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
