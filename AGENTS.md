@@ -13,6 +13,14 @@ node tools/check.mjs            # checks every realm and crew file; CI runs it o
 
 Opening `index.html` as a file does not work: browsers only load JavaScript modules over HTTP. After you edit a file, hard-reload (Ctrl+Shift+R), because browsers cache modules.
 
+A file the page skips shows as a red box at the bottom left and as a console warning prefixed `[vibe-land]`. Check both after every change.
+
+Pushing a change under `.github/workflows/` over HTTPS with a `gh` token needs the `workflow` scope (`gh auth refresh -s workflow`); an SSH remote works without it (2026-11-25).
+
+## Deploy
+
+GitHub Pages serves `main` from the repo root, with no build step: https://vagkaratzas.github.io/mbzuai-vibe-land/. A merge to `main` is live a minute later. If the lab adopts the site, the repo moves to [NotredameLab-MBZUAI-bls](https://github.com/NotredameLab-MBZUAI-bls): re-enable Pages there, then update the link in README.md and here.
+
 ## Layout
 
 | Path | What |
@@ -100,6 +108,7 @@ Scene rules:
 
 - **The info panel covers the right third (x > 410).** Keep what matters left of it; let the background run underneath.
 - Paint the whole canvas every frame, back to front: sky or wall first.
+- Shared props come from the painter module: `import { hazard, palm } from '../../src/pixel.js';`.
 - No text in the canvas: names, quests and links go in the fields, and the panel shows them.
 - Same limits as crew files: painter only, no DOM, network, storage or `eval`; keep the file under 40 kB.
 
