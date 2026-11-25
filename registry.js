@@ -10,4 +10,5 @@ export const realms = [
 
 // Crew: one file each, crew/<id>.js
 export const crew = [
+  'vangelis',
 ];
