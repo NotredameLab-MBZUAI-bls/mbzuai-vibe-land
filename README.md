@@ -2,7 +2,7 @@
 
 The Notredame Lab at MBZUAI as a pixel-art world. Every lab project is an island on the map, and every lab member is an avatar walking around it. Click an island to dive into the project: what it is, its quests, its party, its links.
 
-**Play:** https://vagkaratzas.github.io/mbzuai-vibe-land/
+**Play:** https://notredamelab-mbzuai-bls.github.io/mbzuai-vibe-land/
 
 | Realm | Status |
 |---|---|

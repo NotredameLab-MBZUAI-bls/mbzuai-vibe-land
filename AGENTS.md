@@ -19,7 +19,7 @@ Pushing a change under `.github/workflows/` over HTTPS with a `gh` token needs t
 
 ## Deploy
 
-GitHub Pages serves `main` from the repo root, with no build step: https://vagkaratzas.github.io/mbzuai-vibe-land/. A merge to `main` is live a minute later. If the lab adopts the site, the repo moves to [NotredameLab-MBZUAI-bls](https://github.com/NotredameLab-MBZUAI-bls): re-enable Pages there, then update the link in README.md and here.
+The repo lives in the lab org [NotredameLab-MBZUAI-bls](https://github.com/NotredameLab-MBZUAI-bls) (moved from `vagkaratzas` on 2026-11-26). GitHub Pages serves `main` from the repo root, with no build step: https://notredamelab-mbzuai-bls.github.io/mbzuai-vibe-land/. A merge to `main` is live a minute later.
 
 ## Layout
 
